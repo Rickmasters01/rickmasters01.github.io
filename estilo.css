@@ -51,6 +51,28 @@ h2 { font-size: 13px; color: var(--ciano); margin: 32px 0 8px; }
 .redes a:hover { background: var(--violeta); color: var(--branco); }
 .redes small { display: block; font-family: "Nunito", sans-serif; font-size: 13px; color: var(--lilas); margin-top: 4px; }
 
+/* Página inicial no estilo "árvore de links" */
+.links { max-width: 520px; }
+.links .avatar { display: block; width: 104px; height: 104px; margin: 0 auto 20px; border-radius: 50%;
+  border: 3px solid var(--lilas); box-shadow: 0 0 0 6px rgba(123, 44, 191, .35); }
+.links .logo { width: min(280px, 72vw); }
+.links .sub { margin: 8px 0 0; color: var(--branco); opacity: .85; }
+.arvore { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
+.arvore a {
+  display: flex; align-items: center; gap: 16px; min-height: 64px; padding: 10px 16px;
+  text-decoration: none; color: var(--branco);
+  background: rgba(43, 45, 66, .78); border: 3px solid var(--violeta);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, .35); border-radius: 6px;
+  transition: transform .12s, border-color .12s, box-shadow .12s;
+}
+.arvore a:hover, .arvore a:focus-visible { transform: translate(-2px, -2px); border-color: var(--ciano);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, .35); color: var(--branco); outline: none; }
+.arvore .ic { flex: none; width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; }
+.arvore .ic svg { width: 28px; height: 28px; }
+.arvore .txt { flex: 1; text-align: center; margin-right: 44px;
+  font-family: "Press Start 2P", monospace; font-size: 13px; line-height: 1.6; }
+.arvore .txt small { display: block; font-family: "Nunito", sans-serif; font-size: 14px; color: var(--lilas); }
+
 .rodape { text-align: center; font-size: 14px; color: var(--lilas); margin-top: 40px; }
 .rodape a { margin: 0 8px; }
 
